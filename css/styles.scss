@@ -1,0 +1,50 @@
+@import "components/globals";
+@import "components/bootstrap_reboot";
+@import "components/grids";
+h1{
+    text-align: center;
+}
+button{
+    margin: 2rem 0;
+    align-self: center;
+    
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    
+    background-color: $color-emphasis;
+    color: $color-light;
+    border: 1px solid $color-emphasis;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+
+}
+button:hover{
+    background-color: $color-alternative;
+    border: 1px solid $color-alternative;
+    color: $color-light;
+}
+section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.container-kitties1{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+.container-kitties1 img{
+    width: 26rem;
+    height: 30rem;
+    object-fit: cover;
+    padding: 1rem 1rem 8rem 1rem;
+    box-shadow: 0px 0px 10px 0px $color-primary;
+}
