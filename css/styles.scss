@@ -1,6 +1,8 @@
-@import "components/globals";
 @import "components/bootstrap_reboot";
+@import "components/globals";
 @import "components/grids";
+@import "components/headers";
+
 h1{
     text-align: center;
 }
@@ -18,33 +20,76 @@ button{
     border-radius: 5px;
     cursor: pointer;
     position: relative;
+    &:hover{
+        background-color: $color-alternative;
+        color: $color-light;
+    }
+}
+.random{
+    @include section;
 
-}
-button:hover{
-    background-color: $color-alternative;
-    border: 1px solid $color-alternative;
-    color: $color-light;
-}
-section{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
+    h1{
+        padding-left: 24rem;
+        align-self:flex-start ;
+        margin: 1rem 0;
+        font-size: 2.4rem;
+    }
 }
 .container{
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.container-kitties1{
+.favorites{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.container--kitties{
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
+    position: relative;
 }
-.container-kitties1 img{
+.kitty--img{
     width: 26rem;
     height: 30rem;
     object-fit: cover;
     padding: 1rem 1rem 6rem 1rem;
     box-shadow: 0px 0px 10px 0px $color-primary;
+    background-color: white;
 }
+.container--close{
+    @include spanImg('../assets/bookmark.png', 1);
+    top: -0.5rem;
+    right: 1rem;
+}
+
+.container--bookmark{
+    @include spanImg('../assets/bookmark-saved.png', 1);
+    bottom: 3.8rem;
+    right: 0.6rem;
+}
+.refresh{
+    @include spanImg('../assets/refresh.png', 2);
+    width: 20rem;
+    border-radius: 40px;
+    padding: 2rem;
+}
+.favs--section{
+    background-color: $color-light;
+    padding-bottom: 5rem;
+    h1{
+        align-self:center;
+        margin: 1rem 0;
+        font-size: 2.4rem;
+    }
+}
+/*
+.container--refresh{
+    width: 8rem;
+    height: 15rem;
+}*/

@@ -5,42 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./main.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css">
     <title>Api rest Kitty</title>
 </head>
 <body>
-    <section>
-        <h1>Random kitties</h1>
+    <header class="header--principal">
+        <div class="logo logo--header"><img src="./assets/gray.png"></div>
+        <nav class="nav--header">
+            <h1>The cutest Radom kitties in web</h1>
+        </nav>
+
+      </header>
+    <span class="spanErr"></span>
+    <section class="random">
+        <h1>Refresh for more kitties!</h1>
         <div class="container">
-            <div class="container-kitties1">                
-                <img class="kitty-1" alt="Se muestra la imagen de un gatito">
-                <button>Favoritos</button>
+            <div class="container--kitties">                
+                <img class="kitty-1 kitty--img" alt="Se muestra la imagen de un gatito">
+                <span class="container--bookmark fav-1"></span>
             </div>
-            <div class="container-kitties1">
-                <img class="kitty-2" alt="Se muestra la imagen de un gatito">
-                <button>Favoritos</button>
+            <div class="container--kitties">
+                <img class="kitty-2 kitty--img" alt="Se muestra la imagen de un gatito">
+                <span class="container--bookmark fav-2"></span>
             </div>
-            <div class="container-kitties1">
-                <img class="kitty-3" alt="Se muestra la imagen de un gatito">
-                <button>Favoritos</button>
+            <div class="container--kitties">
+                <img class="kitty-3 kitty--img" alt="Se muestra la imagen de un gatito">
+                <span class="container--bookmark fav-3"></span>
             </div>
-            <div class="container-kitties1">
-                <img class="kitty-4" alt="Se muestra la imagen de un gatito">
-                <button>Favoritos</button>
+            <div class="container--kitties">
+                <img class="kitty-4 kitty--img" alt="Se muestra la imagen de un gatito">
+                <span class="container--bookmark fav-4"></span>
             </div>
-            <div class="container-kitties1">
-                <img class="kitty-5" alt="Se muestra la imagen de un gatito">
-                <button>Favoritos</button>
+            <div class="container--kitties">
+                <img class="kitty-5 kitty--img" alt="Se muestra la imagen de un gatito">
+                <span class="container--bookmark fav-5"></span>
             </div>
         </div>
-        <button class="refresh">New cat</button>
+        <button class="refresh"></button>
         <span class="status"></span>
     </section>
-    <section>
+    <section class="favs--section">
+        <h1>Saved cats</h1>
+        <div class="favorites">
 
+        </div>
     </section>
-    <section>
-        
+    <section class="upload">
+        <form class="upload--form">
+            <input class="upload--form__input" type="file" name="file">
+            <button class="upload--form__button" type="button">Enviar</button>
+        </form>
     </section>
 </body>
 </html>

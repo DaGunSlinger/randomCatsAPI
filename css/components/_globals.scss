@@ -1,10 +1,44 @@
-/*$fuente1: 'Lato', sans-serif;
-$fuente2: 'Oswald', sans-serif;*/
+$fuente1: 'Lato', sans-serif;
+$fuente2: 'Oswald', sans-serif;
+$fuente3: 'Satisfy', cursive;
+/*$fuente2: 'Oswald', sans-serif;*/
 $color-primary: #2b303a;
 $color-light: #eee5e9;
 $color-secondary: #92dce5;
 $color-alternative: #7c7c7c;
 $color-emphasis: #d64933;
+
+
+//mixins
+@mixin section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+}
+@mixin spanImg($URL,$size){
+    background-image: url($URL);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem * $size;
+    height: 4rem * $size;
+    @if $size == 1{
+        position: absolute;
+    }
+    cursor: pointer;
+}
+
+@mixin titulos($fuente){
+    @if $fuente == $fuente1 {
+        font-family: $fuente1;
+    } @else {
+        font-family: $fuente2;
+        text-transform: uppercase;
+    }
+}
+
 //content
 *{
     box-sizing: border-box;
