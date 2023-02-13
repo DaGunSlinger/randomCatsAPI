@@ -1,0 +1,42 @@
+.footer--principal{
+    display: flex;
+    height: 12rem;
+    margin-top: 3rem;
+    padding: 0 2rem;
+    background-color: $color-primary;
+    font-size: 1.6rem;
+}
+
+.nav--footer {
+    ul{
+    display: flex;
+    padding: 3.5rem 0 0 5rem;
+    font-weight: bolder;
+    }
+    li{
+        list-style: none;
+        margin-right: 5rem;
+    }
+    a{
+        color: $color-light;
+        @include titulos($fuente2)
+    }
+}
+.nav--social{
+    margin-left: auto;
+    font-weight: bolder;
+
+    ul{
+        display: flex;
+        padding-top: 3.5rem;
+    }
+    li{
+        list-style: none;
+        margin-right: 5rem;
+        color: $color-light;
+    }
+    a{
+        color: $color-light;
+        @include titulos($fuente2)
+    }
+}

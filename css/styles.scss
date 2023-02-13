@@ -2,6 +2,7 @@
 @import "components/globals";
 @import "components/grids";
 @import "components/headers";
+@import "components/footers";
 
 h1{
     text-align: center;
@@ -80,12 +81,47 @@ button{
     padding: 2rem;
 }
 .favs--section{
+    padding-top: 1rem;
     background-color: $color-light;
     padding-bottom: 5rem;
     h1{
         align-self:center;
         margin: 1rem 0;
         font-size: 2.4rem;
+    }
+}
+
+.upload{
+    width: 100%;
+
+    h1{
+        font-size: 2.8rem;
+        margin: 1rem 0 0 1rem;
+    }
+    p{
+        font-size: 1.6rem;
+        margin: 0 0 1rem 0;
+    }
+
+    &--form{
+        width: 40%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+
+        color: $color-alternative;
+        border: 2px dashed $color-alternative;
+    }
+
+    .upload--form__input{
+        width: 20rem;
+        // cursor: pointer;
+    }
+    .upload--form__button{
+        width: 35rem;
     }
 }
 /*
